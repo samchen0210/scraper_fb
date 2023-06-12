@@ -19,4 +19,10 @@ password.send_keys(credentials.password)
 
 password.submit()
 
-time.sleep(60)
+time.sleep(5)
+
+driver.get('https://www.facebook.com/search/top?q=ettoday%E6%96%B0%E8%81%9E%E9%9B%B2')
+
+for i in range(20):
+    driver.execute_script('window.scrollTo(0, document.body.scrollHeight)')
+    time.sleep(3)
